@@ -40,7 +40,7 @@
 <section>
 <div class="card-deck">
 <%Event.all.each do |event|%>
-<%if event.admin_id ==  @user.events.find_by(admin_id: params[:id])%>
+<%if event.admin_id ==  @user.events.find_by(admin_id: params[:id]).admin_id%>
 <div class="col-sm-4 mb-3">
 <div class="card">
   <div class="card-header">
