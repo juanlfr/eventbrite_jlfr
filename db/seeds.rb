@@ -17,7 +17,7 @@ Attendance.destroy_all
     first_name: fname,
     last_name: Faker::Name.last_name,
 	  email: fname + "@yopmail.com",
-    encrypted_password: Faker::Internet.password)
+    password: Faker::Internet.password)
     puts "Seeding of User nb #{x}"
 end 
 
