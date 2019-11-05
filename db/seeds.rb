@@ -10,7 +10,7 @@ User.destroy_all
 Event.destroy_all
 Attendance.destroy_all
 
-5.times do |x|
+10.times do |x|
   fname = Faker::Name.first_name
   User.create(
 	  description: Faker::Quote.famous_last_words, 
@@ -26,7 +26,7 @@ end
 t1 = Time.parse("2019-11-01 20:40:34")
 t2 = Time.parse("2022-01-01 00:00:00")
 
-2.times do |x|
+20.times do |x|
     Event.create(
     start_date: rand(t1..t2),
     duration: rand(5..100)*5,

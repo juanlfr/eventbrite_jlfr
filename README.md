@@ -1,24 +1,19 @@
 # README
+Clone le dossier sur ton ordi
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Place toi sur le dossier de l'application
 
-Things you may want to cover:
+Fais bundle install
 
-* Ruby version
+Crées un DB avec rails db:create
 
-* System dependencies
+Puis rails db:migrate:status
 
-* Configuration
+Fais aussi un rails db:seed
 
-* Database creation
+Lance le serveur avec $ rails s
 
-* Database initialization
+Ouvre sur ton navigateur http://localhost:3000/
 
-* How to run the test suite
+lien vers heroku : https://eventbrite-jf.herokuapp.com/
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

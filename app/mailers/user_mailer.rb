@@ -6,7 +6,7 @@ class UserMailer < ApplicationMailer
     @user = user 
 
     #on définit une variable @url qu'on utilisera dans la view d’e-mail
-    @url  = 'https://eventbrute.herokuapp.com/' 
+    @url  = 'https://eventbrite-jf.herokuapp.com/' 
 
     # c'est cet appel à mail() qui permet d'envoyer l’e-mail en définissant destinataire et sujet.
     mail(to: @user.email, subject: 'Bienvenue chez nous !') 
@@ -15,7 +15,7 @@ class UserMailer < ApplicationMailer
   def inscription_event(attendance)
   	@attendance = attendance
   	@admin = attendance.event.admin
-    @url = 'https://eventbrute.herokuapp.com/'
+    @url = 'https://eventbrite-jf.herokuapp.com/'
     mail(to: @attendance.event.admin.email, subject: 'Une nouvelle inscription à votre event !') 
   end
 
