@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  after_create :welcome_send
+  #after_create :welcome_send
 
 	#validates :first_name, presence: true
   #validates :last_name, presence: true
