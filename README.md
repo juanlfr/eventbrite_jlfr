@@ -15,5 +15,5 @@ Lance le serveur avec $ rails s
 
 Ouvre sur ton navigateur http://localhost:3000/
 
-lien vers heroku : https://eventbrite-jf.herokuapp.com/
+
 
